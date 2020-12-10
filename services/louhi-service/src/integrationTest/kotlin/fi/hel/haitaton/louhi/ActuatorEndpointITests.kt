@@ -47,6 +47,6 @@ class ActuatorEndpointITests(@Autowired val mockMvc: MockMvc) {
                 .perform(get("/actuator/info"))
                 .andExpect(status().isOk)
                 .andExpect(content().contentType("application/vnd.spring-boot.actuator.v3+json"))
-                .andExpect(jsonPath("$.build.artifact").value("hanke-service"))
+                .andExpect(jsonPath("$.build.artifact").value("louhi-service"))
     }
 }
