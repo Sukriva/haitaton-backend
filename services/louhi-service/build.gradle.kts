@@ -77,6 +77,7 @@ dependencies {
 	testImplementation("org.springframework.boot:spring-boot-starter-test") {
 		exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
 	}
+	testImplementation("org.apache.camel:camel-test-spring-junit5:$camelVersion")
 	testImplementation("io.mockk:mockk:$mockkVersion")
 	testImplementation("com.ninja-squad:springmockk:$springmockkVersion")
 	testImplementation("com.willowtreeapps.assertk:assertk-jvm:$assertkVersion")
